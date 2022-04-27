@@ -5,6 +5,7 @@ let isJumping = false;
 let isGameOver = false;
 let position = 0;
 
+//Função pra pegar o espaço do teclado
 function handleKeyUp(event) {
   if (event.keyCode === 32) {
     if (!isJumping) {
@@ -13,6 +14,7 @@ function handleKeyUp(event) {
   }
 }
 
+//Função de pulo
 function jump() {
   isJumping = true;
 
@@ -38,6 +40,7 @@ function jump() {
   }, 20);
 }
 
+//Função do Cacto
 function createCactus() {
   const cactus = document.createElement('div');
   let cactusPosition = 1000;
